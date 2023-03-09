@@ -23,30 +23,37 @@ Librairies et outils utiles
 
 - SAP GUI: Téléchargeable gratuitement `ici <https://developers.sap.com/trials-downloads.html>`__
 
-  - Credentials trouvées sur bugmenot.com -> enjeviesvvnofrylla@rffff.net / sapppret2-12U
+  - Credentials trouvées sur bugmenot.com : enjeviesvvnofrylla@rffff.net / sapppret2-12U
   - Extraire les sources : unrar x SAP_GUI_for_Java.rar
   - Installer : java -jar PlatinGUI-Linux-7.70rev1.jar
   - Démarrer : guistart conn=/H/<URL>/S/<PORT>
 
 - Addon Nmap pour la reconnaissance de proto SAP (nmap-erpscan) : 
 
-	* git clone https://github.com/gelim/nmap-erpscan.git
-	* cd nmap-erpscan
-	* NMAPDIR=. nmap -p $(sap_ports.py) <IP> -sV --open
+  .. code-block:: bash
+
+  	git clone https://github.com/gelim/nmap-erpscan.git
+  	cd nmap-erpscan
+  	NMAPDIR=. nmap -p $(sap_ports.py) <IP> -sV --open
 
 - Dissecteur wireshark pour les protocole SAP
 
-	* git clone https://gitlab.com/wireshark/wireshark && cd wireshark
-	* git checkout release-3.6
-	* git clone https://github.com/SecureAuthCorp/SAP-Dissection-plug-in-for-Wireshark/ plugins/epan/sap
-	* git apply plugins/epan/sap/wireshark-release-3.6.patch
-	* mkdir -p build && cd build
-	* sudo apt install glib2-devel libglib2.0-dev libgcrypt20-dev libc-ares-dev qtbase5-dev libqt5svg5-dev qttools5-dev qtmultimedia5-dev
-	* cmake .. && make && sudo make install
+  .. code-block:: bash 
 
-- plugin dbeaver pour SAP HANA: https://saplearners.com/how-to-connect-sap-hana-cloud-from-dbeaver/
-- pysap -> lib python sans dépendance payante, fournie avec plein de scripts / poc utiles pour différents services SAP (bruteforce, enum...). 
-- SAP RFC SDK: Librairie C/C++ pour se connecter aux systèmes SAP. Nécéssite un compte S-User (payant). 
+	git clone https://gitlab.com/wireshark/wireshark && cd wireshark
+  	git checkout release-3.6
+	git clone https://github.com/SecureAuthCorp/SAP-Dissection-plug-in-for-Wireshark/ plugins/epan/sap
+  	git apply plugins/epan/sap/wireshark-release-3.6.patch
+  	mkdir -p build && cd build
+  	sudo apt install glib2-devel libglib2.0-dev libgcrypt20-dev libc-ares-dev qtbase5-dev libqt5svg5-dev qttools5-dev qtmultimedia5-dev
+  	cmake .. && make && sudo make install
+
+- `Plugin <https://saplearners.com/how-to-connect-sap-hana-cloud-from-dbeaver/>`__ 
+  dbeaver pour SAP HANA 
+- pysap -> lib python sans dépendance payante, fournie avec plein de scripts /
+  poc utiles pour différents services SAP (bruteforce, enum...). 
+- SAP RFC SDK: Librairie C/C++ pour se connecter aux systèmes SAP. Nécéssite un
+  compte S-User (payant). 
 - PyRFC: Python binding du SAP RFC SDK. Nécéssite un compte S-User (payant). 
 
 
