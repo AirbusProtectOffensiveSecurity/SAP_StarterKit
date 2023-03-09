@@ -21,7 +21,8 @@ Tools
 Librairies et outils utiles
 ***************************
 
-- SAP GUI: Téléchargeable gratuitement ici https://developers.sap.com/trials-downloads.html
+- SAP GUI: Téléchargeable gratuitement `ici <https://developers.sap.com/trials-downloads.html>`__
+
   - Credentials trouvées sur bugmenot.com -> enjeviesvvnofrylla@rffff.net / sapppret2-12U
   - Extraire les sources : unrar x SAP_GUI_for_Java.rar
   - Installer : java -jar PlatinGUI-Linux-7.70rev1.jar
