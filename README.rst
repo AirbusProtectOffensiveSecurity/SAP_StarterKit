@@ -22,11 +22,10 @@ Librairies et outils utiles
 ***************************
 
 - SAP GUI: Téléchargeable gratuitement ici https://developers.sap.com/trials-downloads.html
-
-	- Credentials trouvées sur bugmenot.com -> enjeviesvvnofrylla@rffff.net / sapppret2-12U
-	- Extraire les sources : unrar x SAP_GUI_for_Java.rar
-	- Installer : java -jar PlatinGUI-Linux-7.70rev1.jar
-	- Démarrer : guistart conn=/H/<URL>/S/<PORT>
+  - Credentials trouvées sur bugmenot.com -> enjeviesvvnofrylla@rffff.net / sapppret2-12U
+  - Extraire les sources : unrar x SAP_GUI_for_Java.rar
+  - Installer : java -jar PlatinGUI-Linux-7.70rev1.jar
+  - Démarrer : guistart conn=/H/<URL>/S/<PORT>
 
 - Addon Nmap pour la reconnaissance de proto SAP (nmap-erpscan) : 
 
