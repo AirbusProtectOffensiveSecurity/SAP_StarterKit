@@ -99,10 +99,8 @@ Beaucoup de modules metasploit existent:
 Wordlist
 --------
 
-Credentials SAP par défaut : 
+Credentials SAP par défaut : voir :download:`ce fichier <sap_creds.txt>`.
 
-.. include:: sap_creds.txt
-   :literal:
 
 Github & whitepapers
 --------------------
