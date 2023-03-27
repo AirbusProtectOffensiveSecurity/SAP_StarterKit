@@ -14,6 +14,17 @@ Deux types de comptes sap.com :
 Permet notamment de télécharger des softs SAP comme le NW RFC SDK. Ce type de
 compte est payant. 
 
+SAP Security
+------------
+
+- SAP Security Patch Day
+
+Beaucoup de CVEs sont publiées tous les mois (notamment venant d'Onapsys). SAP 
+a son security patch day tous les mois et fournit des bulletins de sécurité 
+les vulns découvertes: `ici <https://wiki.scn.sap.com/wiki/display/Security/>`__ 
+et `ici <https://wiki.scn.sap.com/wiki/display/Security/Security+Notes+Webinar+-+2023-02>`__.
+
+- `SAP ABAP Transactions codes related to SAP Security <https://wiki.scn.sap.com/wiki/display/Security/List+of+ABAP-transaction+codes+related+to+SAP+security>`__
 
 Tools
 -----
@@ -61,12 +72,23 @@ Exploits toolkits
 *****************
 
 - RFCpwn: An SAP enumeration and exploitation toolkit using SAP RFC calls --> Nécéssite SAP RFC GUI. 
-- SAP_GW_RCE_exploit (https://github.com/chipik/SAP_GW_RCE_exploit)
-- SAP_RECON (PoC for CVE-2020-6287, CVE-2020-6286): https://github.com/chipik/SAP_RECON
+- SAP_GW_RCE_exploit (`<https://github.com/chipik/SAP_GW_RCE_exploit>`__)
+- SAP_RECON (PoC for CVE-2020-6287, CVE-2020-6286): `<https://github.com/chipik/SAP_RECON>`__
+- Nuclei Template  CVE-2022-22536 `<https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2022/CVE-2022-22536.yaml>`__
+- Exploit CVE-2020-6287 `<https://github.com/murataydemir/CVE-2020-6287>`__
+- Open Redirect POC `<https://wiki.scn.sap.com/wiki/display/ABAPConn/The+logoff+parameter+redirecturl+is+marked+as+a+security+vulnerability>`__
 
 
 Metasploit pour SAP
 -------------------
+Beaucoup de modules metasploit existent:
+
+  - service discovery
+  - public infos
+  - sap management console scanners
+  - brute-forcing credentials, prefer bruteforcing on Management Console rather 
+    than Web UI
+
 
 .. code-block:: bash
 
@@ -74,10 +96,21 @@ Metasploit pour SAP
 	msfconsole -q -x 'use auxiliary/scanner/sap/sap_mgmt_con_getprocesslist ; set RHOSTS $URL ; run'
 
 
+Wordlist
+--------
+
+Credentials SAP par défaut : 
+
+.. include:: sap_creds.txt
+   :literal:
 
 Github & whitepapers
 --------------------
 
 - `SAP security cheatsheet <https://github.com/Jean-Francois-C/SAP-Security-Audit/blob/master/SAP%20security%20audit%20and%20penetration%20test>`__
 - `SAP Security Assessment Methodology <https://niiconsulting.com/checkmate/2021/01/sap-security-assessment-methodology-part-3-credential-centric-attack-vectors/>`__
+- `SAP Default Credentials <https://protect4s.com/wp-content/uploads/2017/05/CYBSEC_16_An-easy-way-into-your-SAP-systems_V3.0.pdf>`__
+- `HackTricks <https://book.hacktricks.xyz/network-services-pentesting/pentesting-sap>`__
+- `My SAP Adventure <https://github.com/shipcod3/mySapAdventures>`__
+- `SAP Gateway to Heaven <https://github.com/msuiche/OPCDE/blob/master/2019/Emirates/(SAP)%20Gateway%20to%20Heaven%20-%20Dmitry%20Chastuhin%2C%20Mathieu%20Geli/(SAP)%20Gateway%20to%20Heaven.pdf>`__
 
