@@ -111,4 +111,5 @@ Github & whitepapers
 - `HackTricks <https://book.hacktricks.xyz/network-services-pentesting/pentesting-sap>`__
 - `My SAP Adventure <https://github.com/shipcod3/mySapAdventures>`__
 - `SAP Gateway to Heaven <https://github.com/msuiche/OPCDE/blob/master/2019/Emirates/(SAP)%20Gateway%20to%20Heaven%20-%20Dmitry%20Chastuhin%2C%20Mathieu%20Geli/(SAP)%20Gateway%20to%20Heaven.pdf>`__
+- `SAP development tools <https://tools.eu1.hana.ondemand.com/>`__
 
